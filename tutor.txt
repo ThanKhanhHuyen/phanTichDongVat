@@ -1,0 +1,21 @@
+Chương trình phân loại động vật trong sở thú (Zoo Animals Classification)
+
+Hướng dẫn sử dụng:
+    pip install -r ./requirements.txt để cài các thư viện liên quan
+    streamlit run ./ui.py để chạy file giao diện
+
+Cách hoạt động:
+Thu thập dữ liệu (dataset) -> Tiền xử lý dữ liệu -> Xây dựng và đánh giá mô hình -> Xây dựng chương trình dựa trên mô hình và đánh giá
+
+File dataset: zoo.csv (Chưa tiền xử lý dữ liệu)
+
+Thuật toán mô hình lựa chọn: multilayer perceptron (có thể làm thêm các thuật toán khác để so sánh accuracy,...)
+
+File multilayer_perceptron.py: File xây dựng mô hình bằng cách gọi dataset, 
+    training model (chia dataset thành 80% data training và 20% data testing để máy dùng multilayer perceptron học rồi lưu vào file multilayer_perceptron.pkl - file nhị phân ko mở được)
+
+File classify.py: File sử dụng mô hình [multilayer_perceptron.pkl] để phân loại 1 input data, ở đây sẽ phân loại thành 1 trong 7 nhóm động vật
+
+File ui.py: File chương trình (giao diện) dùng để chạy
+
+Chúc các bạn thành công :3
